@@ -32,7 +32,7 @@ namespace Stopwatch_Form
             this.components = new System.ComponentModel.Container();
             this.minuteLabel = new System.Windows.Forms.Label();
             this.secondLabel = new System.Windows.Forms.Label();
-            this.miliLabel = new System.Windows.Forms.Label();
+            this.centiLabel = new System.Windows.Forms.Label();
             this.colonLabel = new System.Windows.Forms.Label();
             this.dotLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -62,15 +62,15 @@ namespace Stopwatch_Form
             this.secondLabel.TabIndex = 1;
             this.secondLabel.Text = "00";
             // 
-            // miliLabel
+            // centiLabel
             // 
-            this.miliLabel.AutoSize = true;
-            this.miliLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miliLabel.Location = new System.Drawing.Point(676, 243);
-            this.miliLabel.Name = "miliLabel";
-            this.miliLabel.Size = new System.Drawing.Size(81, 58);
-            this.miliLabel.TabIndex = 2;
-            this.miliLabel.Text = "00";
+            this.centiLabel.AutoSize = true;
+            this.centiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.centiLabel.Location = new System.Drawing.Point(676, 243);
+            this.centiLabel.Name = "centiLabel";
+            this.centiLabel.Size = new System.Drawing.Size(81, 58);
+            this.centiLabel.TabIndex = 2;
+            this.centiLabel.Text = "00";
             // 
             // colonLabel
             // 
@@ -112,6 +112,7 @@ namespace Stopwatch_Form
             this.startButton.TabIndex = 6;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // stopButton
             // 
@@ -122,6 +123,7 @@ namespace Stopwatch_Form
             this.stopButton.TabIndex = 7;
             this.stopButton.Text = "Stop";
             this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
             // resetButton
             // 
@@ -132,11 +134,13 @@ namespace Stopwatch_Form
             this.resetButton.TabIndex = 8;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -149,7 +153,7 @@ namespace Stopwatch_Form
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.dotLabel);
             this.Controls.Add(this.colonLabel);
-            this.Controls.Add(this.miliLabel);
+            this.Controls.Add(this.centiLabel);
             this.Controls.Add(this.secondLabel);
             this.Controls.Add(this.minuteLabel);
             this.Name = "Form1";
@@ -163,7 +167,7 @@ namespace Stopwatch_Form
 
         private System.Windows.Forms.Label minuteLabel;
         private System.Windows.Forms.Label secondLabel;
-        private System.Windows.Forms.Label miliLabel;
+        private System.Windows.Forms.Label centiLabel;
         private System.Windows.Forms.Label colonLabel;
         private System.Windows.Forms.Label dotLabel;
         private System.Windows.Forms.Label titleLabel;
