@@ -29,6 +29,7 @@ namespace Stopwatch_Form
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.minuteLabel = new System.Windows.Forms.Label();
             this.secondLabel = new System.Windows.Forms.Label();
             this.miliLabel = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@ namespace Stopwatch_Form
             this.startButton = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // minuteLabel
@@ -131,6 +133,11 @@ namespace Stopwatch_Form
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -163,6 +170,7 @@ namespace Stopwatch_Form
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
