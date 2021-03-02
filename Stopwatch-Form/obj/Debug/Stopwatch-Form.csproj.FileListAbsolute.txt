@@ -1,0 +1,10 @@
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\bin\Debug\Stopwatch-Form.exe.config
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\bin\Debug\Stopwatch-Form.exe
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\bin\Debug\Stopwatch-Form.pdb
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch-Form.csprojAssemblyReference.cache
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch_Form.Form1.resources
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch_Form.Properties.Resources.resources
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch-Form.csproj.GenerateResource.cache
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch-Form.csproj.CoreCompileInputs.cache
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch-Form.exe
+C:\Users\jorda\Sandbox\C# Practice\Stopwatch-Form\Stopwatch-Form\obj\Debug\Stopwatch-Form.pdb

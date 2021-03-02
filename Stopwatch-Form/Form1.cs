@@ -45,7 +45,28 @@ namespace Stopwatch_Form
             if (isActive)
             {
                 timeCenti++;
+
+                if (timeCenti >= 100)
+                {
+                    timeSec++;
+                    timeCenti = 0;
+
+                    if (timeSec >= 60)
+                    {
+                        timeMin++;
+                        timeSec = 0;
+                    }
+                }
             }
+
+            DisplayTime();
+        }
+
+        private void DisplayTime()
+        {
+            centiLabel.Text = String.Format("{0:00}", timeCenti);
+            secondLabel.Text = String.Format("{0:00}", timeSec);
+            minuteLabel.Text = String.Format("{0:00}", timeMin);
         }
 
         public Form1()
